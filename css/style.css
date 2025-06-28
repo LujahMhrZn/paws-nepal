@@ -447,30 +447,49 @@ footer {
 }
 
 .sort-options {
-    margin-bottom: 20px;
+    margin-bottom: 28px;
     display: flex;
     align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
 }
 
 .sort-options span {
-    margin-right: 15px;
-    font-weight: 500;
+    margin-right: 10px;
+    font-weight: 600;
+    color: var(--primary-color);
+    letter-spacing: 0.5px;
+    font-size: 1.08rem;
 }
 
 .sort-btn {
-    background: none;
-    border: 1px solid #ddd;
-    padding: 5px 15px;
-    margin-right: 10px;
-    border-radius: 10px;
+    background: rgba(255,255,255,0.85);
+    border: 1.5px solid rgba(75, 43, 65, 0.726);
+    color: var(--dark-color);
+    padding: 8px 20px;
+    margin-right: 8px;
+    border-radius: 16px;
     cursor: pointer;
-    transition: all 0.3s ease;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: 
+        background 0.25s,
+        color 0.25s,
+        border-color 0.25s,
+        box-shadow 0.25s;
+    box-shadow: 0 1.5px 6px rgba(78,205,196,0.08);
+}
+
+.sort-btn:last-child {
+    margin-right: 0;
 }
 
 .sort-btn:hover, .sort-btn.active {
     background: var(--primary-color);
-    color: white;
+    color: #fff;
     border-color: var(--primary-color);
+    box-shadow: 0 4px 16px rgba(255,107,107,0.13);
+    transform: translateY(-2px) scale(1.04);
 }
 
 .dog-cards {
