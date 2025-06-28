@@ -576,7 +576,7 @@ footer {
 
 .cost-calculator {
     padding: 60px 0;
-    background-color: var(--secondary-color);
+    background-color: #246b66;
     color: white;
     text-align: center;
 }
