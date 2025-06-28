@@ -82,13 +82,13 @@ header {
 }
 
 .logo h1 {
-    font-family: 'Pacifico', 'Brush Script MT', cursive, sans-serif;
+    font-family:'Courier New', Courier, monospace;
     font-size: 2.2rem;
     color: var(--light-color);
     letter-spacing: 3px;
-    font-weight: bold;
-    font-size: 19px;
-    text-shadow: 0 3px 12px rgba(0,0,0,0.13), 0 1px 0 var(--primary-color);
+    font-weight:900;
+    font-size: 26px;
+    text-shadow: 0 3px 12px rgba(0,0,0,0.13), 0 1px 0;
     transition: color 0.3s;
 }
 .logo h1:hover {
