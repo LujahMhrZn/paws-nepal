@@ -3,16 +3,16 @@
         {
             "name": "Buddy",
             "breed": "Mixed Breed",
-            "age": "3",
-            "size": "Medium",
+            "age": "7",
+            "size": "Large",
             "description": "Buddy is a friendly and energetic dog who loves playing fetch. He gets along well with children and other dogs.",
             "image": "images/dogs/buddy.jpg"
         },
         {
             "name": "Luna",
             "breed": "Labrador Mix",
-            "age": "2",
-            "size": "Large",
+            "age": "4",
+            "size": "Medium",
             "description": "Luna is a sweet and gentle soul who enjoys long walks and cuddles on the couch.",
             "image": "images/dogs/luna.jpg"
         },
@@ -44,7 +44,7 @@
             "name": "Max",
             "breed": "Mixed Breed",
             "age": "2",
-            "size": "Medium",
+            "size": "Small",
             "description": "Max is a smart and active dog who would excel in agility training. He's very food-motivated.",
             "image": "images/dogs/max.jpg"
         },
@@ -52,7 +52,7 @@
             "name": "Daisy",
             "breed": "Mixed Breed",
             "age": "6",
-            "size": "Small",
+            "size": "Medium",
             "description": "Daisy is a senior dog looking for a peaceful retirement home. She's low-energy and affectionate.",
             "image": "images/dogs/daisy.jpg"
         },
