@@ -1,0 +1,68 @@
+{
+    "dogs": [
+        {
+            "name": "Buddy",
+            "breed": "Mixed Breed",
+            "age": "3",
+            "size": "Medium",
+            "description": "Buddy is a friendly and energetic dog who loves playing fetch. He gets along well with children and other dogs.",
+            "image": "images/dogs/buddy.jpg"
+        },
+        {
+            "name": "Luna",
+            "breed": "Labrador Mix",
+            "age": "2",
+            "size": "Large",
+            "description": "Luna is a sweet and gentle soul who enjoys long walks and cuddles on the couch.",
+            "image": "images/dogs/luna.jpg"
+        },
+        {
+            "name": "Rocky",
+            "breed": "Himalayan Sheepdog",
+            "age": "4",
+            "size": "Large",
+            "description": "Rocky is a loyal protector who would make a great guard dog. He's calm but very alert.",
+            "image": "images/dogs/rocky.jpg"
+        },
+        {
+            "name": "Charlie",
+            "breed": "Terrier Mix",
+            "age": "1",
+            "size": "Small",
+            "description": "Charlie is a playful puppy full of energy. He's quick to learn and loves treats.",
+            "image": "images/dogs/charlie.jpg"
+        },
+        {
+            "name": "Bella",
+            "breed": "Mixed Breed",
+            "age": "5",
+            "size": "Medium",
+            "description": "Bella is a mellow dog who would be perfect for a quiet home. She's house-trained and well-behaved.",
+            "image": "images/dogs/bella.jpg"
+        },
+        {
+            "name": "Max",
+            "breed": "Mixed Breed",
+            "age": "2",
+            "size": "Medium",
+            "description": "Max is a smart and active dog who would excel in agility training. He's very food-motivated.",
+            "image": "images/dogs/max.jpg"
+        },
+        {
+            "name": "Daisy",
+            "breed": "Mixed Breed",
+            "age": "6",
+            "size": "Small",
+            "description": "Daisy is a senior dog looking for a peaceful retirement home. She's low-energy and affectionate.",
+            "image": "images/dogs/daisy.jpg"
+        },
+        {
+            "name": "Cooper",
+            "breed": "Himalayan Sheepdog Mix",
+            "age": "3",
+            "size": "Large",
+            "description": "Cooper is a majestic dog with a thick coat. He would do best in a home with a yard.",
+            "image": "images/dogs/cooper.jpg"
+        }
+    ]
+}

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Paws Nepal</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logos/paws-nepal-logo.svg" alt="Paws Nepal Logo">
+            
+                <h1>Paws Nepal</h1>
+
+            <nav>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-links">
+                    <li ><a href="index.html">Home</a></li>
+                    <li><a href="adopt.html">Adopt</a></li>
+                    <li><a href="gallery.html">Success Stories</a></li>
+                    <li class="active"><a href="contact.html">Contact</a></li>
+                    <li><a href="register.html">Register</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="contact-hero">
+            <div class="container">
+                <h1>Get in Touch</h1>
+                <p>We'd love to hear from you</p>
+            </div>
+        </section>
+
+        <section class="contact-content">
+            <div class="container">
+                <div class="contact-info">
+                    <h2>Our Information</h2>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>123 Dog Lane, Kathmandu, Nepal</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+977 9841XXXXXX</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>info@pawsnepal.org</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <p>Open Monday-Saturday: 9AM - 5PM</p>
+                    </div>
+                    <div class="social-media">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/luj_.mhj/"><i class="fab fa-instagram">insta</i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h2>Send Us a Message</h2>
+                    <form id="inquiry-form">
+                        <div class="form-group">
+                            <label for="name">Full Name*</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email*</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number*</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject">
+                                <option value="adoption">Adoption Inquiry</option>
+                                <option value="foster">Foster Care</option>
+                                <option value="donation">Donation</option>
+                                <option value="volunteer">Volunteering</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message*</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-item">
+                    <h3 class="faq-question">What is the adoption process? <i class="fas fa-chevron-down"></i></h3>
+                    <div class="faq-answer">
+                        <p>Our adoption process involves four simple steps: application, home visit, meet & greet, and finalizing adoption. The entire process typically takes 1-2 weeks.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">Are all dogs vaccinated? <i class="fas fa-chevron-down"></i></h3>
+                    <div class="faq-answer">
+                        <p>Yes, all dogs in our care receive complete vaccinations, deworming, and are spayed/neutered before adoption.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">Can I return a dog if it doesn't work out? <i class="fas fa-chevron-down"></i></h3>
+                    <div class="faq-answer">
+                        <p>While we hope every adoption is successful, we understand sometimes it doesn't work out. We have a no-questions-asked return policy within the first month.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">Do you offer post-adoption support? <i class="fas fa-chevron-down"></i></h3>
+                    <div class="faq-answer">
+                        <p>Absolutely! We provide lifetime support for all our adopted dogs, including behavioral advice and discounted veterinary services at our partner clinics.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+ <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About Paws Nepal</h3>
+                    <p>Established in 2015, Paws Nepal has helped over 500 dogs find loving homes across the country.</p>
+                    <p class="tech-note">Future Upgrade: We're planning to implement React.js for an interactive dog search with component-based filtering.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="adopt.html">Adopt</a></li>
+                        <li><a href="gallery.html">Success Stories</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Kathmandu, Nepal</p>
+                    <p><i class="fas fa-phone"></i> +977 9841XXXXXX</p>
+                    <p><i class="fas fa-envelope"></i> info@pawsnepal.org</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Paws Nepal. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/form-validation.js"></script>
+</body>
+</html>

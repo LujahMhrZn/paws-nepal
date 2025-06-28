@@ -1,0 +1,97 @@
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    height: 250px;
+}
+
+.gallery-item:hover {
+    transform: translateY(-10px);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+.gallery-caption {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    right: 0;
+    background: rgba(30, 30, 30, 0.35);
+    color: white;
+    padding: 20px;
+    transition: bottom 0.3s ease, backdrop-filter 0.3s ease;
+    backdrop-filter: blur(10px) saturate(160%);
+    -webkit-backdrop-filter: blur(10px) saturate(160%);
+    border-top: 1px solid rgba(255,255,255,0.2);
+    box-shadow: 0 4px 32px 0 rgba(0,0,0,0.15);
+}
+
+.gallery-item:hover .gallery-caption {
+    bottom: 0;
+}
+
+.gallery-caption h3 {
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+/* Magnific Popup adjustments */
+.mfp-image-holder .mfp-content {
+    max-width: 90%;
+}
+
+.mfp-figure:after {
+    box-shadow: none;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.mfp-title {
+    text-align: center;
+    padding: 10px;
+    color: white;
+    font-size: 1.2rem;
+}
+
+
+
+@keyframes fade {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.slider-controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.slider-dot {
+    width: 12px;
+    height: 12px;
+    background: #ccc;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.slider-dot.active {
+    background: var(--primary-color);
+}
