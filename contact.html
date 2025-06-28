@@ -71,15 +71,18 @@
                     <form id="inquiry-form">
                         <div class="form-group">
                             <label for="name">Full Name*</label>
-                            <input type="text" id="name" name="name" required>
+                            <input type="text" id="name" name="name" required placeholder="John Doe">
+                            <div class="error" id="nameError"></div>
                         </div>
                         <div class="form-group">
                             <label for="email">Email*</label>
-                            <input type="email" id="email" name="email" required>
+                            <input type="email" id="email" name="email" required placeholder="johndoe@gmail.com">
+                            <div class="error" id="emailError"></div>
                         </div>
                         <div class="form-group">
                             <label for="phone">Phone Number*</label>
-                            <input type="tel" id="phone" name="phone" required>
+                            <input type="tel" id="phone" name="phone" required placeholder="Your phone number">
+                            <div class="error" id="phoneError"></div>
                         </div>
                         <div class="form-group">
                             <label for="subject">Subject</label>
@@ -167,5 +170,8 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/form-validation.js"></script>
+      <script>
+
+        </script>
 </body>
 </html>

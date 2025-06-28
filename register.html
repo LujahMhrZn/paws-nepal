@@ -178,43 +178,7 @@
                                     color: #e74c3c;
                                 }
                             </style>
-                            <script>
-                                document.addEventListener('DOMContentLoaded', function() {
-                                    // Terms modal
-                                    var termsModal = document.getElementById('terms-modal');
-                                    var openTerms = document.getElementById('open-terms');
-                                    var closeTerms = document.getElementById('close-terms');
-                                    openTerms.onclick = function(e) {
-                                        e.preventDefault();
-                                        termsModal.style.display = 'block';
-                                    }
-                                    closeTerms.onclick = function() {
-                                        termsModal.style.display = 'none';
-                                    }
-
-                                    // Privacy modal
-                                    var privacyModal = document.getElementById('privacy-modal');
-                                    var openPrivacy = document.getElementById('open-privacy');
-                                    var closePrivacy = document.getElementById('close-privacy');
-                                    openPrivacy.onclick = function(e) {
-                                        e.preventDefault();
-                                        privacyModal.style.display = 'block';
-                                    }
-                                    closePrivacy.onclick = function() {
-                                        privacyModal.style.display = 'none';
-                                    }
-
-                                    // Close modal when clicking outside
-                                    window.onclick = function(event) {
-                                        if (event.target == termsModal) {
-                                            termsModal.style.display = 'none';
-                                        }
-                                        if (event.target == privacyModal) {
-                                            privacyModal.style.display = 'none';
-                                        }
-                                    }
-                                });
-                            </script></label>
+                           </label>
                         </div>
                         <button type="submit" class="btn">Register</button>
                     </form>
