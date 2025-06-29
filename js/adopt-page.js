@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Helper function to check age range
+  
     function checkAge(ageStr, ageGroup) {
         const age = parseInt(ageStr);
         
@@ -68,21 +68,20 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Setup sorting functionality
     function setupSorting(dogs) {
-        const sortButtons = document.querySelectorAll('.sort-btn');
-        
+        const sortButtons = document.querySelectorAll('.sort-btn'); /* finds ALL elements with the CSS class 'sort-btn' Returns a NodeList (like an array) of elements*/
         sortButtons.forEach(button => {
             button.addEventListener('click', function() {
                 // Update active button
-                sortButtons.forEach(btn => btn.classList.remove('active'));
-                this.classList.add('active');
+                sortButtons.forEach(btn => btn.classList.remove('active'));//removes the 'active' class from all buttons
+                this.classList.add('active'); //This ensures only one button looks "active" at a time
                 
                 // Get sort key
                 const sortKey = this.dataset.sort;
                 
                 // Sort dogs
-                const sortedDogs = [...dogs].sort((a, b) => {
+                const sortedDogs = [...dogs].sort((a, b) => { //[...dogs] = Spread operator creates a shallow copy of the dogs array
                     if (sortKey === 'name') {
-                        return a.name.localeCompare(b.name);
+                        return a.name.localeCompare(b.name); //localeCompare() = compares strings alphabetically Returns negative number if a < b, positive if a > b, 0 if eq
                     } else if (sortKey === 'age') {
                         return getAgeValue(a.age) - getAgeValue(b.age);
                     } else if (sortKey === 'size') {
@@ -97,9 +96,9 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Helper function to extract numeric age
+    // function to extract numeric age
     function getAgeValue(ageStr) {
-        return parseInt(ageStr);
+        return parseInt(ageStr); //string to intiger
     }
     
     // Adoption Cost Calculator

@@ -46,15 +46,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function checkPasswordStrength() {
     const password = this.value;
-    const strengthMeter = document.querySelector('.strength-meter');
-    const strengthText = document.querySelector('.strength-text');
+
     const requirements = document.querySelectorAll('.password-requirements li');
-    
-    let strength = 0;
     
     // Check length
     if (password.length >= 8) {
-        strength += 1;
+        
         requirements[0].classList.add('valid');
     } else {
         requirements[0].classList.remove('valid');
@@ -62,7 +59,7 @@ function checkPasswordStrength() {
     
     // Check for numbers
     if (password.match(/\d/)) {
-        strength += 1;
+        
         requirements[1].classList.add('valid');
     } else {
         requirements[1].classList.remove('valid');
@@ -70,7 +67,7 @@ function checkPasswordStrength() {
     
     // Check for special characters
     if (password.match(/[^A-Za-z0-9]/)) {
-        strength += 1;
+        
         requirements[2].classList.add('valid');
     } else {
         requirements[2].classList.remove('valid');
@@ -78,13 +75,10 @@ function checkPasswordStrength() {
     
     // Check for uppercase letters
     if (password.match(/[A-Z]/)) {
-        strength += 1;
+        
         requirements[3].classList.add('valid');
     } else {
         requirements[3].classList.remove('valid');
     }
     
-    // Update strength meter
-    const width = strength * 25;
-    strengthMeter.style.width = `${width}%`; 
 }
