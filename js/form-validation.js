@@ -131,32 +131,4 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
-
-    // Visit Form Validation
-    const visitForm = document.getElementById('visit-form');
-    if (visitForm) {
-        visitForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            clearErrors(visitForm);
-
-            let valid = true;
-
-            const date = visitForm.querySelector('#visit-date');
-            const time = visitForm.querySelector('#visit-time');
-
-            if (!date.value.trim()) {
-                showError(date, 'Date is required');
-                valid = false;
-            }
-            if (!time.value) {
-                showError(time, 'Time is required');
-                valid = false;
-            }
-
-            if (valid) {
-                alert(`Visit scheduled for ${date.value} at ${time.value}. We look forward to seeing you!`);
-                visitForm.reset();
-            }
-        });
-    }
 });
