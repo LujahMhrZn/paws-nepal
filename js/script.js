@@ -86,20 +86,5 @@ function checkPasswordStrength() {
     
     // Update strength meter
     const width = strength * 25;
-    strengthMeter.style.width = `${width}%`;
-    
-    // Update strength text and color
-    if (width <= 25) {
-        strengthText.textContent = 'Password Strength: Weak';
-        strengthMeter.style.background = 'red';
-    } else if (width <= 50) {
-        strengthText.textContent = 'Password Strength: Fair';
-        strengthMeter.style.background = 'orange';
-    } else if (width <= 75) {
-        strengthText.textContent = 'Password Strength: Good';
-        strengthMeter.style.background = 'yellow';
-    } else {
-        strengthText.textContent = 'Password Strength: Strong';
-        strengthMeter.style.background = 'green';
-    }
+    strengthMeter.style.width = `${width}%`; 
 }
