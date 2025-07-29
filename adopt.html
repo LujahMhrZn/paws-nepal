@@ -113,7 +113,35 @@
                             <option value="2:00 PM">2:00 PM</option>
                         </select>
                     </div>
-                    <button type="submit" class="btn">Schedule Visit</button>
+                    <button type="submit" class="btn" id="schedule-visit-btn">Schedule Visit</button>
+                    <script>
+                        document.getElementById('visit-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    // Create popup box
+    let popup = document.createElement('div');
+    popup.style.position = 'fixed';
+    popup.style.top = '50%';
+    popup.style.left = '50%';
+    popup.style.transform = 'translate(-50%, -50%)';
+    popup.style.background = '#fff';
+    popup.style.padding = '30px 40px';
+    popup.style.boxShadow = '0 2px 16px rgba(0,0,0,0.2)';
+    popup.style.borderRadius = '8px';
+    popup.style.zIndex = '9999';
+    popup.innerHTML = `
+        <h3 style="margin:0 0 10px 0;">Your visit has been scheduled!</h3>
+        <p>We will get back to you soon.</p>
+        <button id="close-popup" style="margin-top:15px;padding:8px 20px;background:#007bff;color:#fff;border:none;border-radius:4px;cursor:pointer;">Close</button>
+    `;
+
+    document.body.appendChild(popup);
+
+    document.getElementById('close-popup').onclick = function() {
+        popup.remove();
+    };
+});
+                    </script>
                 </form>
             </div>
         </section>

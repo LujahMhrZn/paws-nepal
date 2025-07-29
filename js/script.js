@@ -110,31 +110,3 @@ document.getElementById('inquiry-form').addEventListener('submit', function(e) {
         popup.remove();
     };
 });
-
-// Login form popup
-document.getElementById('login-form').addEventListener('submit', function(e) {
-    e.preventDefault();
-
-    // Create popup box
-    let popup = document.createElement('div');
-    popup.style.position = 'fixed';
-    popup.style.top = '50%';
-    popup.style.left = '50%';
-    popup.style.transform = 'translate(-50%, -50%)';
-    popup.style.background = '#fff';
-    popup.style.padding = '30px 40px';
-    popup.style.boxShadow = '0 2px 16px rgba(0,0,0,0.2)';
-    popup.style.borderRadius = '8px';
-    popup.style.zIndex = '9999';
-    popup.innerHTML = `
-        <h3 style="margin:0 0 10px 0;">Login Successful!</h3>
-        <p>Welcome back! You have successfully logged in.</p>
-        <button id="close-login-popup" style="margin-top:15px;padding:8px 20px;background:#007bff;color:#fff;border:none;border-radius:4px;cursor:pointer;">Close</button>
-    `;
-
-    document.body.appendChild(popup);
-
-    document.getElementById('close-login-popup').onclick = function() {
-        popup.remove();
-    };
-});
