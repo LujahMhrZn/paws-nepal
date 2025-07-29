@@ -17,7 +17,3 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-
-//$ is jQuery's main function/object
-//.fn = This is where jQuery plugins are attached
-//.magnificPopup = This is the plugin method for initializing the lightbox

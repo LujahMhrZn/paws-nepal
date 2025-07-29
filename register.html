@@ -22,9 +22,10 @@
                 <ul class="nav-links">
                     <li ><a href="index.html">Home</a></li>
                     <li><a href="adopt.html">Adopt</a></li>
-                    <li><a href="gallery.html">Success Stories</a></li>
+                    <li><a href="gallery.html">Stories</a></li>
                     <li><a href="contact.html">Contact</a></li>
                     <li class="active"><a href="register.html">Register</a></li>
+                    <li><a href="login.html">Login</a></li>
                 </ul>
             </nav>
         </div>
@@ -39,9 +40,9 @@
 
         <section class="register-form">
             <div class="container">
-                <div class="form-container">
+                <div class="form-container" >
                     <h2>User Registration</h2>
-                    <form id="registration-form">
+                    <form id="registration-form" action="login.html">
                         <div class="form-group">
                             <label for="reg-name">Full Name*</label>
                             <input type="text" id="reg-name" name="reg-name" required>
@@ -75,7 +76,6 @@
                         <div class="form-group checkbox">
                             <input type="checkbox" id="terms" name="terms" required>
                             <label for="terms" style="font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;">
-                                I agree to the 
                                 <a href="#" id="open-terms">Terms of Service</a> and 
                                 <a href="#" id="open-privacy">Privacy Policy</a>
                             </label>
@@ -179,11 +179,57 @@
                                     }
                                 };
                             });
+
+                            // Registration success modal
+                            var registerBtn = document.getElementById('register-btn');
+                            var registrationForm = document.getElementById('registration-form');
+
+                            // Create success modal
+                            var successModal = document.createElement('div');
+                            successModal.className = 'modal';
+                            successModal.id = 'success-modal';
+                            successModal.innerHTML = `
+                                <div class="modal-content glassy">
+                                    <span class="close" id="close-success">&times;</span>
+                                    <h2>Registration Successful!</h2>
+                                    <p>Your account has been created. Please log in.</p>
+                                </div>
+                            `;
+                            document.body.appendChild(successModal);
+
+                            registrationForm.addEventListener('submit', function(e) {
+                                // If form is valid, show modal and prevent default redirect
+                                if (registrationForm.checkValidity()) {
+                                    e.preventDefault();
+                                    successModal.style.display = 'block';
+                                }
+                            });
+
+                            document.getElementById('close-success').onclick = function() {
+                                successModal.style.display = 'none';
+                                window.location.href = 'login.html';
+                            };
+
+                            window.onclick = function(event) {
+                                if (event.target == successModal) {
+                                    successModal.style.display = 'none';
+                                    window.location.href = 'login.html';
+                                }
+                                // Keep existing modal close logic
+                                if (event.target == termsModal) {
+                                    termsModal.style.display = 'none';
+                                }
+                                if (event.target == privacyModal) {
+                                    privacyModal.style.display = 'none';
+                                }
+                            };
+
+
                         </script>
-                        <button type="submit" class="btn">Register</button>
+                        <button id="register-btn" type="submit" class="btn">Register</button>
                     </form>
                     <div class="login-link">
-                        <p>Already have an account? <a href="#">Log in here</a></p>
+                        <p>Already have an account? <a href="login.html">Log in here</a></p>
                     </div>
                 </div>
 

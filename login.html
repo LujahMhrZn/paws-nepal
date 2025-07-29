@@ -21,65 +21,45 @@
                     <i class="fas fa-bars"></i>
                 </div>
                 <ul class="nav-links">
-                    <li class="active"><a href="index.html">Home</a></li>
+                    <li ><a href="index.html">Home</a></li>
                     <li><a href="adopt.html">Adopt</a></li>
                     <li><a href="gallery.html">Stories</a></li>
                     <li><a href="contact.html">Contact</a></li>
                     <li><a href="register.html">Register</a></li>
-                    <li><a href="login.html">Login</a></li>
+                    <li class="active"><a href="login.html">Login</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- Loading Section -->
-        <section class="hero">
+  
+        <section class="login-hero">
             <div class="hero-content">
-                <h2>Because Every Stray Deserves a Place to Stay</h2>
-                <p>Join us in our mission to find loving homes for stray dogs in Nepal</p>
-                <a href="adopt.html" class="btn">Adopt Today</a>
+                <h2>Log In to Access Your Account</h2>
+                <p>Welcome Back!</p>
             </div>
         </section>
 
-        <section class="mission">
+           <section class="register-form">
             <div class="container">
-                <h2>Our Mission</h2>
-                <p>Paws Nepal is dedicated to rescuing, rehabilitating, and rehoming stray dogs across Nepal. We believe every dog deserves a loving home and work tirelessly to match them with caring families.</p>
-            </div>
-        </section>
+                <div class="form-container" >
+                    <h2>User login</h2>
+                    <form id="login-form">
+        
+                        <div class="form-group">
+                            <label for="reg-email">Email*</label>
+                            <input type="email" id="reg-email" name="reg-email" required>
+                        </div>
+   
+                        <div class="form-group">
+                            <label for="reg-password">Password*</label>
+                            <input type="password" id="reg-password" name="reg-password" required>
 
-        <section class="urgent-cases">
-            <div class="container">
-                <h2>Urgent Adoption Cases</h2>
-                <div class="slider">
-                    <div class="slide">
-                        <img src="images/dogs/urgent-1.jpg" alt="Buddy - Urgent Adoption">
-                        <div class="slide-content">
-                            <h3>Buddy</h3>
-                            <p>3 years old | Mixed Breed | Found injured in Kathmandu</p>
-                            <a href="adopt.html#buddy" class="btn">Learn More</a>
                         </div>
-                    </div>
-                    <div class="slide">
-                        <img src="images/dogs/urgent-2.jpg" alt="Luna - Urgent Adoption">
-                        <div class="slide-content">
-                            <h3>Luna</h3>
-                            <p>2 years old | Labrador Mix | Rescued from streets of Pokhara</p>
-                            <a href="adopt.html#luna" class="btn">Learn More</a>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <img src="images/dogs/urgent-3.jpg" alt="Rocky - Urgent Adoption">
-                        <div class="slide-content">
-                            <h3>Rocky</h3>
-                            <p>4 years old | Himalayan Sheepdog | Needs special care</p>
-                            <a href="adopt.html#rocky" class="btn">Learn More</a>
-                        </div>
-                    </div>
+                        <button type="submit" class="btn" onclick="event.preventDefault(); if(document.getElementById('login-form').checkValidity()){ window.location.href='index.html'; }">Login</button>
+                    </form>
                 </div>
-            </div>
         </section>
-    </main>
 
     <footer>
         <div class="container">
@@ -96,7 +76,6 @@
                         <li><a href="adopt.html">Adopt</a></li>
                         <li><a href="gallery.html">Success Stories</a></li>
                         <li><a href="contact.html">Contact</a></li>
-                        
                     </ul>
                 </div>
                 <div class="footer-section">

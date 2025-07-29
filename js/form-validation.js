@@ -82,7 +82,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }
 
             if (valid) {
-                alert('Registration successful! We will contact you soon.');
                 regForm.reset();
             }
         });
@@ -126,7 +125,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }
 
             if (valid) {
-                alert('Thank you for your inquiry! We will get back to you soon.');
                 inquiryForm.reset();
             }
         });

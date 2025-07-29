@@ -163,7 +163,7 @@ nav {
 }
 
 /* Hero Sections */
-.hero, .adopt-hero, .gallery-hero, .contact-hero, .register-hero {
+.hero, .adopt-hero, .gallery-hero, .contact-hero, .register-hero, .login-hero {
     height: 500px;
     display: flex;
     align-items: center;
@@ -652,6 +652,12 @@ footer {
 .register-hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/register-hero.jpg');
 }
+
+.login-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/login-hero.jpg');
+}
+
+
 
 .success-stories {
     padding: 60px 0;
